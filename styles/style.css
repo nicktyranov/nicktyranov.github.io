@@ -18,6 +18,10 @@ body {
   font-family: Arial;
 }
 
+a {
+  cursor: pointer;
+}
+
 .first-screen {
   margin: 0 auto;
 }
@@ -40,6 +44,7 @@ body {
 .menu-item--wrapper {
   display: flex;
   gap: 50px;
+  cursor: pointer;
 }
 
 .heading--wrapper {
@@ -90,7 +95,7 @@ body {
 
 .footer-1-text--top {
   margin-top: 120px;
-  color: (--color-secondary);
+  color: var(--color-secondary);
   font-size: 24px;
   font-weight: 400;
   line-height: 34.99px;
