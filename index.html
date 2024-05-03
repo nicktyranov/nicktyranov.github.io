@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="P.ai is a Creative Analytics platform, with a sprinkle of AI."
+    />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/media.css" />
     <title>P.AI</title>
@@ -10,7 +14,7 @@
   <body>
     <div>
       <section class="first-screen">
-        <div class="menu">
+        <nav class="menu">
           <img src="./img/logo-pai.svg" alt="logo" />
           <div class="menu-item--wrapper">
             <div class="menu-item">Product</div>
@@ -19,7 +23,7 @@
             <div class="menu-item">Blog</div>
             <div class="menu-item">Login</div>
           </div>
-        </div>
+        </nav>
         <div class="heading--wrapper">
           <h1 class="heading">
             Generate unlimited, <br />winning audiences.<br />
@@ -228,15 +232,24 @@
         </div>
       </footer>
       <div class="copyright">
-        <div>
-          Programmai Ltd.<br />
-          © 2022. All Rights Reserved.
-        </div>
+        <div>© 2022 Programmai Ltd. All Rights Reserved.</div>
         <div class="copyright-agreement">
           <a href="#">Privacy Policy</a>
           <a href="#">Data Processing Agreement</a>
         </div>
       </div>
     </div>
+
+    <script>
+      document
+        .querySelectorAll("a, .menu-item, .offer-button")
+        .forEach(function (item) {
+          // Добавляем обработчик события клика
+          item.addEventListener("click", function (event) {
+            event.preventDefault();
+            alert("Links and buttons don`t work :)");
+          });
+        });
+    </script>
   </body>
 </html>
