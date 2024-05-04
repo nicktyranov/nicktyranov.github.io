@@ -2,7 +2,7 @@
   --color-primary: rgb(13, 13, 13);
   --color-secondary: rgb(255, 255, 255);
   --color-dark: rgb(0, 0, 0);
-  --color-section-feature-link: #929292;
+  --color-section-link: #929292;
   --section-feature-bg: rgb(243, 243, 243);
   --color-quotation-bg: rgb(78, 94, 255);
   --card-bg: rgb(36, 36, 36);
@@ -163,7 +163,7 @@ a {
 }
 
 .section-feature-link {
-  color: var(--color-section-feature-link);
+  color: var(--color-section-link);
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
@@ -197,6 +197,7 @@ a {
 .card {
   position: relative;
   max-width: 325px;
+  min-height: 350px;
   background-color: var(--card-bg);
   /* display: flex; */
 }
@@ -246,10 +247,10 @@ a {
 }
 
 .card-text-link {
+  color: var(--color-section-link);
   display: block;
   margin-top: 30px;
   text-decoration: none;
-
   position: absolute;
   bottom: 10px;
 }
