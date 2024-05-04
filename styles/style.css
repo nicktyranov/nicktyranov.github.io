@@ -2,6 +2,7 @@
   --color-primary: rgb(13, 13, 13);
   --color-secondary: rgb(255, 255, 255);
   --color-dark: rgb(0, 0, 0);
+  --color-section-feature-link: #929292;
   --section-feature-bg: rgb(243, 243, 243);
   --color-quotation-bg: rgb(78, 94, 255);
   --card-bg: rgb(36, 36, 36);
@@ -162,7 +163,7 @@ a {
 }
 
 .section-feature-link {
-  color: var(--color-primary);
+  color: var(--color-section-feature-link);
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
@@ -255,10 +256,11 @@ a {
 
 #icon-plus {
   position: absolute;
-  right: -7%;
-  bottom: 45%;
-  width: 50px;
+  right: -12%;
+  bottom: 33%;
+  width: 62px;
   height: 62px;
+  z-index: 2;
 }
 
 .quotation-bg {
@@ -343,9 +345,10 @@ a {
   color: var(--color-dark);
   font-size: 16px;
   font-weight: 400;
-  line-height: 22.61px;
+  line-height: 22px;
   letter-spacing: 0.04px;
   text-align: center;
+  border-radius: 37px;
 }
 
 .footer {
