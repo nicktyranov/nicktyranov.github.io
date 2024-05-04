@@ -197,7 +197,7 @@ a {
 .card {
   position: relative;
   max-width: 325px;
-  min-height: 350px;
+  /* min-height: 350px; */
   background-color: var(--card-bg);
   /* display: flex; */
 }
