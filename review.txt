@@ -1,0 +1,67 @@
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/index.html#L29 - br это плохо, можно обернуть текст в параграфы или использовать свойтсво https://developer.mozilla.org/en-US/docs/Web/CSS/white-space (то есть пишешь текст как есть в макете в бэктиках  `тут свой текст`)
+
+C 35 по 35 строку тоже самое
+
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/index.html#L39 - почему тут у класса имя  footer, хотя по факту это же не футер) может clients?
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/index.html#L47 - если тут предполагается переход к историям, то надо делать через кнопку или ссылку (лучше ссылка)
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/index.html#L47 - в заголовках не дожно быть br, выглядит очень некрасиво
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/index.html#L47 - href #learn-more чтобы хотя бы при клике у нас в поисковой строке браузера менялось состояние
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/index.html#L66 - картинки лучше оборачивать в доп div и давать класс, это позволяет писать более конкретные селекторы в стилях да и читабельность возрастает
+
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/index.html#L116 - лучше все же использовать класс для этого, и класс должен быть понятным - volume-efficiency-image
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/index.html#L120 - лучше сделать это через псевдоэлементы, не нужно рисовать бесполезные ноды и тратить ресурсы браузера на Парсинг этого добра
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/index.html#L137 - снова лучше класс
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/index.html#L19 - почему див а не список?
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/index.html#L20 - так как это навигация, то надо переписать на ссылки, а лучше всего использовать якорные ссылки, чтобы можно было по ним кликать
+
+
+По стилям 
+
+Если ты внимательно посмотришь на значения стилей, то увидишь что очень много значений повторяются, а значит все это можно выносить в css переменные, как ты цвет вынес (вынеси размеры)
+Хорошей практикой является подключение reset.css - для сброса дефолтных стилей браузера, либо можешь сам написать сброс, и желательно в отдельном файле, который подключается в html самым первым
+Максимальная ширина должна быть у всего приложения - и задаваться один раз, а не у каждого элемента (у тебя аж 7 раз задается 1280px)
+
+++ https://github.com/nicktyranov/nicktyranov.github.io/blob/main/styles/style.css#L37 - шрифт задаетс один раз (у тебя уже в боди задан, стили же наследуются
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/styles/style.css#L66 - возможно стоит вместо спана выбрать другой элемент у которого уже дисплей блок? Так как принудительно менять у строкового элемента дисплей не верно, только уж какие то прям совсем крайние случаи
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/styles/style.css#L77 - опять шрифт дублируешь
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/styles/style.css#L118 - коментарии из кода надо убирать, так как это мусор и показывает тебя как неряху
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/styles/style.css#L258 - все же предлагаю все селекторы перписать на классы, не нужно лишний раз увеличивать специфичность селектора
+
+++https://github.com/nicktyranov/nicktyranov.github.io/blob/main/styles/media.css#L426 - можно писать так margin: 20px 10px 105px; (четвертая 10ка автоматом подставится браузером)
+
+
+
+.quotation-heading
+.quotation-text
+.quotation-author
+.quotation-author span
+.footer-1-text--top
+.footer-1-text--bottom
+.section-feature-final
+.volume-efficiency-image
+#icon-plus
+.cards_wrapper
+.footer-1
+.footer-1-logos img
+.section-feature-text__wrapper
+.footer-menu
+.footer-menu-list
+.footer-menu-heading
+.footer-menu-link
+.copyright
+.copyright a
+.copyright-agreement
